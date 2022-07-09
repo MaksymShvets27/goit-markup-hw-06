@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/styless.css" />
     <title>Студия</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -115,7 +116,9 @@
           <ul class="list">
             <li class="list-item">
               <img src="./images/work/img-1.jpg" alt="Написание кода" width="370" height="295" />
-              <div class="area-text"><p>Десктопные приложения</p></div>
+              <div class="area-text">
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -124,7 +127,9 @@
                 width="370"
                 height="295"
               />
-              <div class="area-text"><p>Мобильные приложения</p></div>
+              <div class="area-text">
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li class="list-item">
               <img
@@ -133,7 +138,9 @@
                 width="370"
                 height="295"
               />
-              <div class="area-text"><p>Дизайнерские решения</p></div>
+              <div class="area-text">
+                <p>Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -597,16 +604,75 @@
             </li>
           </ul>
         </div>
+        <div class="mailing">
+          <p class="mailing-title">Подпишитесь на рассылку</p>
+          <form class="mailing-form">
+            <input class="mailing-form-field" type="email" name="user-email" placeholder="E-mail" />
+            <button class="button" type="submit">
+              <p class="submit-text">Подписаться</p>
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mailing"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <form class="modal">
         <button class="modal-close-button" type="button" data-modal-close>
           <svg class="icon-close" height="18" width="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-      </div>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <label>
+          <p class="input-name">Имя</p>
+          <div class="modal-unit-area">
+            <svg class="modal-icon" height="18" width="18">
+              <use href="./images/icons.svg#icon-modal-name"></use>
+            </svg>
+            <input class="modal-input-area" type="text" name="user-name" />
+          </div>
+        </label>
+        <label>
+          <p class="input-name">Телефон</p>
+          <div class="modal-unit-area">
+            <svg class="modal-icon" height="18" width="18">
+              <use href="./images/icons.svg#icon-modal-tel"></use>
+            </svg>
+            <input class="modal-input-area" type="tel" name="user-tel" />
+          </div>
+        </label>
+        <label>
+          <p class="input-name">Почта</p>
+          <div class="modal-unit-area">
+            <svg class="modal-icon" height="18" width="18">
+              <use href="./images/icons.svg#icon-modal-email"></use>
+            </svg>
+            <input class="modal-input-area" type="email" name="user-email" />
+          </div>
+        </label>
+        <label>
+          <p class="input-name">Комментарий</p>
+          <textarea class="comment-area" name="feedback" placeholder="Введите текст"></textarea>
+        </label>
+        <label>
+          <div class="agreement">
+            <input class="checkbox" type="checkbox" name="user-agreement" />
+            <svg class="check-icon" height="15" width="16">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <svg class="check-out-icon" height="15" width="16">
+              <use href="./images/icons.svg#icon-check-out"></use>
+            </svg>
+            <p class="agreement-text">
+              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            </p>
+          </div>
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
